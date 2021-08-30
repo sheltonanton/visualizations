@@ -15,6 +15,15 @@ export default function Navigation(props) {
 			<Link to="/normal" className="tab">
 				N'ary Tree
 			</Link>
+			<Link to="/crossword" className="tab">
+				Crossword
+			</Link>
+			<Link to="/graphs" className="tab">
+				Graph
+			</Link>
+			<Link to="/animations" className="tab">
+				Animations
+			</Link>
 		</nav>
 	);
 }

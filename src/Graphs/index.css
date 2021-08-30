@@ -1,0 +1,42 @@
+.cell_source:hover {
+    background-color: rgba(92, 228, 51, 0.1);
+}
+.cell_s.cell_source:hover {
+    background-color: green;
+}
+
+.cell_dest:hover {
+    background-color: rgba(207, 40, 40, 0.1);
+}
+.cell_d.cell_dest:hover {
+    background-color: red;
+}
+
+.cell_add:hover {
+    background-color: #dadada;
+}
+.cell_a.cell_add:hover {
+    background-color: #ddd;
+}
+
+.cell_remove:hover {
+    background-color: #fefefe;
+}
+
+.cell_s {
+    background-color: green;
+}
+
+.cell_d {
+    background-color: red;
+}
+
+.cell_a {
+    background-color: #ddd;
+}
+
+.cell.cell_f {
+    transition-duration: 0.7s;
+    transform: rotateY(180deg);
+    background-color: #97c5f5;
+}
