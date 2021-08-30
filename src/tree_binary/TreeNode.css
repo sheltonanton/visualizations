@@ -1,0 +1,13 @@
+.tn-container {
+	position: absolute;
+	border: 1px solid #ddd;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	border-radius: 7.5px;
+	background-color: white;
+	z-index: 10;
+	text-align: center;
+	padding-top: 4px;
+	color: #555;
+}

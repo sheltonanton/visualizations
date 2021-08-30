@@ -1,0 +1,40 @@
+.app-container {
+	position: absolute;
+	width: 90vw;
+	height: 90vh;
+	padding: 5vh 5vw;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-justify-center {
+	justify-content: center;
+}
+
+.bordered {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.tab {
+	display: inline-block;
+	min-width: 100px;
+	padding: 12px;
+	margin: 0px 8px;
+	border: 1px solid #ddd;
+	border-bottom: 0px;
+}
