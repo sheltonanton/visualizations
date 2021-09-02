@@ -69,10 +69,8 @@ function Grid(props) {
                     let t = event.target;
                     let v = action[0];
                     v = (v == "r") && "" || v;
-                    if(!t.classList.contains(`cell_${v}`)) {
-                        t.className = "";
-                        t.classList.add(`cell_${v}`);
-                    }
+                    t.className = "";
+                    t.classList.add(`cell_${v}`);
                     let d = t.dataset;
                     let [i, j] = [parseInt(d['row']), parseInt(d['column'])]
                     grid[i][j] = v;
