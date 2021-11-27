@@ -77,6 +77,14 @@ function dropInitialization(element, {drag = '.drag', drop = '.drop'}) {
     }
 }
 
+function mutationCallback(mutations) {
+    for(let mutation of mutations) {
+        if(mutation.type == 'childList') {
+            
+        }
+    }
+}
+
 function initialize({drag = '.drag', drop = '.drop'}) {
     document.querySelectorAll(drag).forEach(element => {
         dragInitialization(element, {drag, drop});
@@ -86,11 +94,9 @@ function initialize({drag = '.drag', drop = '.drop'}) {
         dropInitialization(element, {drag, drop});
     });
 
-    return {
-        addDraggable: function(element) {
-            dragInitialization(element, {drag, drop});
-        }
-    }
+    let observer = new MutationObserver(mutationCallback);
+    let config = { childList: true }
+    document.querySelectorAll(drop).forEach(element => observer.observe(element, config));
 }
 
 //dropBox not hidden

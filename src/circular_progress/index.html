@@ -58,16 +58,17 @@
     <script type='text/javascript'>
         let seconds = 0;
         let interval = null;
+        let element = document.getElementById('progress');
+
         interval = setInterval(() => {
-            if(seconds == 360) {
+            if(seconds == 359.75) {
                 clearInterval(interval);
             }
             angle = (360 / 60) * seconds;
-            seconds = seconds + 1;
+            seconds = seconds + 0.25;
             let background = `conic-gradient(#555 ${seconds}deg, white ${seconds}deg 360deg)`;
-            let element = document.getElementById('progress');
             element.style.background = background;
-        }, 166.67);
+        }, 50);
     </script>
 </body>
 </html>
