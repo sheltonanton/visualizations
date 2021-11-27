@@ -31,13 +31,14 @@
             top: 50%;
             transform: translateY(-50%);
             margin: auto;
+            background: green 0deg, white 0deg 360deg;
         }
 
         .timer {
             position: relative;
-            width: 160px;
-            height: 160px;
-            border-radius: 80px;
+            width: 170px;
+            height: 170px;
+            border-radius: 85px;
             background-color: white;
             top: 50%;
             transform: translateY(-50%);
@@ -58,17 +59,15 @@
         let seconds = 0;
         let interval = null;
         interval = setInterval(() => {
-            if(seconds == 60) {
+            if(seconds == 360) {
                 clearInterval(interval);
             }
             angle = (360 / 60) * seconds;
             seconds = seconds + 1;
-            console.log(seconds);
-            console.log(angle);
-            let background = `conic-gradient(green ${angle}deg, white ${angle}deg 360deg)`;
+            let background = `conic-gradient(#555 ${seconds}deg, white ${seconds}deg 360deg)`;
             let element = document.getElementById('progress');
             element.style.background = background;
-        }, 1000);
+        }, 166.67);
     </script>
 </body>
 </html>
