@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop tutorial</title>
+    <style type='text/css'>
+        body {
+            white-space: nowrap;
+        }
+
+        .drop-container {
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            padding: 8px;
+            margin-right: 8px;
+            width: 272px;
+            white-space: normal;
+            vertical-align: top;
+            background-color: #fcfcfc;
+        }
+
+        .draggable-box {
+            border: 1px solid #ddd;
+            padding: 8px;
+            margin-bottom: 8px;
+            min-height: 30px;
+            cursor: pointer;
+            background-color: white;
+            overflow-x: hidden;
+            overflow-wrap: break-word;
+        }
+
+        .drop-container .drag-active {
+            display: none;
+        }
+
+        .drop-container .drop-box {
+            border: 1px solid #eee;
+            background-color: #eaeaea;
+            margin-bottom: 8px;
+        }
+
+        h4 {
+            padding: 8px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class='drop-container'>
+        <h4>To Do</h4>
+        <div class='draggable-box'>let elem = document.querySelector('div');</div>
+        <div class='draggable-box'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</div>
+        <div class='draggable-box'>The amount of scrolling that has been done of the viewport area (or any other scrollable element) is taken into account when computing the bounding rectangle. </div>
+    </div>
+    <div class='drop-container'>
+        <h4>Doing</h4>
+        <div class='draggable-box'>This box will large text, should the height be increased to a notable amount</div>
+        <div class='draggable-box'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+        <div class='draggable-box'>This simple example retrieves the DOMRect object representing the bounding client rect of a simple element, and prints out its properties below it.</div>
+    </div>
+    <div class='drop-container'>
+        <h4>Done</h4>
+        <div class='draggable-box'>If you need the bounding rectangle relative to the top-left corner of the document, just add the current scrolling position to the top and left properties</div>
+        <div class='draggable-box'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+        <div class='draggable-box'>Scripts requiring high cross-browser compatibility </div>
+    </div>
+    <div class='drop-container'>
+        <h4>Dump</h4>
+        <div class='draggable-box'>setting max age or expires makes the browser to return the cached value without server request</div>
+        <div class='draggable-box'>when cache-control is set to 'must-revalidate' after expiration of cache, the browser send the request to server asking if the cache is still valid or not.</div>
+        <div class='draggable-box'>containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    </div>
+    <div class='drop-container'>
+        <h4>Archives</h4>
+        <div class='draggable-box'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</div>
+        <div class='draggable-box'>but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets</div>
+        <div class='draggable-box'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+    </div>
+    <div class='drop-container'>
+        <h4>Pending</h4>
+        <div class='draggable-box'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+        <div class='draggable-box'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</div>
+        <div class='draggable-box'>but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets</div>
+    </div>
+    <div class='drop-container'>
+        <h4>Retrospect</h4>
+        <div class='draggable-box'>but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets</div>
+        <div class='draggable-box'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+        <div class='draggable-box'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+        let dragDrop = initialize({drag: '.draggable-box', drop: '.drop-container'});
+    </script>
+</body>
+</html>
